@@ -31,19 +31,19 @@ public class GUIKontroler {
 	}
 
 	public static void prikaziDodajKursGUI() {
-		DodajKursGUI prozor = new DodajKursGUI(glavniProzor);
+		DodajKursGUI prozor = new DodajKursGUI();
 		prozor.setLocationRelativeTo(glavniProzor);
 		prozor.setVisible(true);
 	}
 
 	public static void prikaziObrisiKurs(Valuta v) {
-		ObrisiKursGUI prozor = new ObrisiKursGUI(glavniProzor, v);
+		ObrisiKursGUI prozor = new ObrisiKursGUI(v);
 		prozor.setLocationRelativeTo(glavniProzor);
 		prozor.setVisible(true);
 	}
 
 	public static void prikaziIzvrsiZamenu(Valuta v) {
-		IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(glavniProzor, v);
+		IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(v);
 		prozor.setLocationRelativeTo(glavniProzor);
 		prozor.setVisible(true);
 	}
